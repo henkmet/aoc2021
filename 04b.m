@@ -9,7 +9,6 @@ cardsleft=ones(1,100);
 mask=ones(1,100);
 mask(draws(1:4)+1)=0; #not possible to get bingo during first four draws
 for i=5:100
-sum(cardsleft)
         mask(draws(i)+1)=0;
         for j=1:100
                 if (cardsleft(j)==1)
